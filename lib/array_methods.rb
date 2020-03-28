@@ -1,10 +1,15 @@
 def find_element_index(array, value_to_find)
   i = 0
+  new = []
   while (i < array.length) {
     if (value_to_find === array[i]){
       return i
     }
     i++
+    new.push(value_to_find)
+    if(new.length === array.length){
+      return nil
+    }
   }
 end
 
