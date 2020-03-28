@@ -17,10 +17,12 @@ def find_max_value(array)
   i = 0
   big = 0
   while i < array.length do
-  if array[i] > big
+    if array[i] > big
     big = array[i]
+    end
+    i+=1
   end
-  i+=
+  return big
 end
 
 def find_min_value(array)
