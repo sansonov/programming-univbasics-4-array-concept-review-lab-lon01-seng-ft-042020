@@ -5,7 +5,7 @@ def find_element_index(array, value_to_find)
     if array[i] === value_to_find
       return i
     end
-    i++
+    i = i+1
     new.push(value_to_find)
   end
   if new.length === array.length
